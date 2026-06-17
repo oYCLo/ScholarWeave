@@ -1,0 +1,38 @@
+# --- Third-party clones (do NOT commit; users clone them themselves) ---
+repos/
+
+# --- Large / binary research artifacts ---
+*.pdf
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+vault/**/paper.pdf
+vault/**/assets/*
+
+# --- Experiment tracking ---
+.aim/
+code/**/.aim/
+aim_repo/
+runs/
+wandb/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.env
+
+# --- OS / editor ---
+.DS_Store
+.obsidian/workspace*.json
+.idea/
+.vscode/
+
+# Keep empty dirs
+!**/.gitkeep

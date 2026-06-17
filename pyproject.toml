@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scholarweave"
+version = "0.1.0"
+description = "Local, private, AI-driven research knowledge base — thin glue over existing tools (MarkItDown, arXiv, Aim, Obsidian)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "black" }]
+dependencies = [
+    "pyyaml>=6.0",
+]
+
+# Optional integrations are imported lazily so the core CLI runs without them.
+[project.optional-dependencies]
+search = ["arxiv>=2.1"]
+ingest = ["markitdown[all]>=0.1"]
+track = ["aim>=3.17"]
+all = ["arxiv>=2.1", "markitdown[all]>=0.1", "aim>=3.17"]
+
+[project.scripts]
+scholarweave = "scholarweave.cli:main"
+sw = "scholarweave.cli:main"
+
+[tool.setuptools]
+packages = ["scholarweave"]

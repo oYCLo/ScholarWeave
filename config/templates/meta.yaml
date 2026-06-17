@@ -1,0 +1,9 @@
+citekey: {{citekey}}
+title: "{{title}}"
+authors: [{{authors}}]
+year: {{year}}
+source_file: "{{source_file}}"
+doi:
+url:
+citations:
+retracted: false
