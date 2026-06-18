@@ -1,0 +1,10 @@
+# vendor/ is a managed cache of upstream repos, reconstructed from versions.lock
+# by ./install.sh. It is NOT committed (keeps ScholarWeave light; reproducible
+# via the pinned SHAs in versions.lock).
+vendor/
+
+.DS_Store
+
+# Local Claude Code state: per-machine permissions and throwaway session logs.
+.claude/settings.local.json
+.claude/logs/

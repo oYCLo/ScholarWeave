@@ -1,0 +1,7 @@
+# Pinned upstream commits for vendored skill repos.
+# Reproduce with: ./install.sh   (clones + checks out these SHAs into vendor/)
+# Bump with:      ./update.sh     (pulls latest, then rewrites this file)
+
+obsidian-skills    https://github.com/kepano/obsidian-skills.git        a1dc48e68138490d522c04cbf5822214c6eb1202
+dailypaper-skills  https://github.com/huangkiki/dailypaper-skills.git    ec6329c9ee6405f706d7a327937872ae75220774
+claude-scholar     https://github.com/Galaxy-Dawn/claude-scholar.git     34d0cdb48a03080c7243841e19ff03ef30967d97
